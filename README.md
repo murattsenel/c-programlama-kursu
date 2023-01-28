@@ -83,7 +83,7 @@ Hangisinin önce çağırılacağının bir garantisi yoktur. Bu belirsiz bir da
 
 ## DERS 3
 ### SAYISAL SİSTEMLER
- **2lik sayı sistemi**
+### **2lik sayı sistemi**
  ![image](https://user-images.githubusercontent.com/110337932/215271033-d9cdfdc5-a85a-4a20-ad84-dde13ee21425.png)
 + 4 bit = nibble
 + 8 bit = byte
@@ -122,3 +122,44 @@ Sayının 1 e tümleyeninin 1 fazlasıdır. Kısa yol olarak sağdan başlayarak
 + 8 bitlik sayının en son sol bitine işaret biti denir.
 + işaret biti 0 ise pozitif
 + 1 ise negatiftir.
+
+**Aynı sayının negatifi pozitif olan sayının 2 ye tümleyenidir.**
+
++ 0010 0100 = 36
++ 1101 1100= -36
+
+**1111 1111 sayısının değeri kaçtır ?**
+
+Hepsi 1 ise -1 dir.
+
+ ### 16lık sistemi.
+ + Hex sistemi 16lık sistemdir.
+ 
+ **SORULAR**
+ 
+ **0111 1111 değeri kaçtır?**
+  
+ 7F
+ 
+  **2 byte sayının en küçük değeri kaçtır ?**
+  
+  0111 1111 …  →   8000
+  
+ **2 byte alanda -1 değeri kaçtır?**
+ 
+ FFFF
+ 
+ **TERİMLER**
+  
++ Token = atom
++ Tokenazing derleyicinin komutları anlarken kullandığı yöntemdir.kodu token lara ayırır.
++ Translation unit ile source file arasındaki fark nedir?
++ Source file ön işlemci girdisidir.
++ Derleyicinin girdisi ise ön işlemci çıktısı translation unit tir.
++ Anahtar sözcük
++ Sabitler
++ isimler
++ Operatörler
++ String literalleri
++ Ayraçlar
+
