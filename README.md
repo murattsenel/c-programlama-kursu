@@ -85,3 +85,23 @@ Hangisinin önce çağırılacağının bir garantisi yoktur. Bu belirsiz bir da
 ### SAYISAL SİSTEMLER
  **2lik sayı sistemi**
  ![image](https://user-images.githubusercontent.com/110337932/215271033-d9cdfdc5-a85a-4a20-ad84-dde13ee21425.png)
++ 4 bit = nibble
++ 8 bit = byte
++ 16 bit = Word
++ 32 bit = Double Word
+
+**SORULAR**
+
+**1100 1001 sayısının decimal değeri kaçtır ?**
+ 
+ 213
+ 
+**45 sayısının binary gösterimi nedir?**
+
+00101101
+
+**Binary değerlerin alabileceği maksimum değerler**
+- 1 byte =255
+- 2byte =65.535
+- 4 byte =4.294.967.295
+- 8 byte = 18.446.744.073.709.551.615
