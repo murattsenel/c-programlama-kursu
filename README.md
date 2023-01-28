@@ -163,16 +163,16 @@ Hepsi 1 ise -1 dir.
 + String literalleri
 + Ayraçlar
 
-##### Anahtar sözcük (keyword)
+#### Anahtar sözcük (keyword)
  + İnt, if, for, do , float vb
-##### Sabitler
+#### Sabitler
 + 41 decimal
 + 0x41 hex
 + 041 octal 8 lik sayı sistemi !!!!!!! **benzeri mükatta çıktı unutma**
 + C kurallarında olmayan bazı şeyler derleyicilerde farklılık gösterebilir.
-##### Operatörler
+#### Operatörler
 + Operatör işlem yaptıran tokendir.
-##### String literalleri
+#### String literalleri
 + Tek bir tokendir. “merhaba dünya”
 
 #### Object expression
@@ -188,3 +188,57 @@ Hepsi 1 ise -1 dir.
 **Veri bellekte kaç byte yer kaplar?**
 **1 ler ve 0 lar nasıl yorumlanacak?**
 
+Bu soruların cevaplarını nesnenin türü verir.
+
+Veri türleri temelde 2 ye ayrılır.
+
+#### Basic types ve user defined types
++ Basic types dil tarafında hazır sunulan tam sayı veya gerçek sayı değerlerini ifade eden türlerdir.
++ User defined types hazır türler dışında yeni oluşturduğumuz türlere verilen addır.
+
+**Expression(ifade)**
+
+**Statement (deyim)**
+
+**Declaration(bildirim)**
+
+Bir ismin ne olduğunu anlatan şeyler declaration'dır.
++ int x ;
++ int foo(int x) ; gibi
+
+Deyimler ise işlem kodu üreten şeylerdir.
+ + X=y+5;
+ 
+ Value category işlemleri niteler
+ + X+10
++ X*y+5 gibi
+
+**L-value**
+
+**R-value**
+
+ifade bellekte bir yere karşılık geliyorsa l-value dur.
+
+r-value bir hesaplama ifadesidir.
+
+Hangi value kategorisine ait olduğunu anlamak için bir test yapabiliriz.
+
+```c
+#include <stdio.h>
+
+// nesnenin value category testi
+
+int main()
+{
+int x =10;
+&(x);
+ 
+}
+```
+Eğer syntax hatası vermiyorsa bir adresi vardır ve l-value dur.
+
+Syntax hatası veriyorsa r-value dur.
+
+**Constant expression**
+
++ İfadenin değerinin programın çalışma zamanı dışında derleyicide anlaşılan değerlere constant denir.
