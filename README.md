@@ -242,3 +242,48 @@ Syntax hatası veriyorsa r-value dur.
 **Constant expression**
 
 + İfadenin değerinin programın çalışma zamanı dışında derleyicide anlaşılan değerlere constant denir.
+
+## DERS 4
+
+Derleyicinin isim arama sürecine name lookup denir.
+
+İlk programı yazdıralım.
+```C
+#include <stdio.h>
+
+int main(void)
+{
+ printf("hello world");
+ 
+}
+```
+
+###Veri türleri (data types)
+
++ Her değişken verinin türü derleme aşamasında bilinmesi gerekir.
+
+ **Basic types**
+
+**User defined types**
+
+Basic types 2 kategoriye ayrılır.
+
++ İnteger types
++ Floating types
+#### İnteger types
++ _Bool
++ Char
++ Signed char
++ Unsigned char
++ Short int
++ Unsigned short int
++ Long int
++ Unsigned long int
++ Long long int
++ Unsigned long long int
++ İnt
++ Unsigned int
+#### Floating types
++ Float
++ Double
++ Long double
