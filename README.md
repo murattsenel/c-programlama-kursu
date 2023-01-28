@@ -35,3 +35,53 @@
 * Derleyici syntax kurallarına bakar. Dilin kurallarını çiğnediğimiz yerlerde derleyici ileti verir.
 * Bunlar error veya warning dir.
 * Warning 2 anlamda kullanılır.
+```c
+#include <stdio.h>
+
+int ival;
+
+int ival=10;
+int ival==10; // burada derleyici lojic hata uyarisi verir.
+
+int main()
+{
+}
+```
+Burada dil kurallarına uygundur. Ancak dil uyarı mesajı verir.
+```c
+#include <stdio.h>
+
+int ival;
+
+int main()
+{
+int ival += 10;
+int ival + 10; 
+}
+```
+Burada da bir kurallarına uygundur ama ival değeri 10 artmayacaktır.
+Derleyici burada uyarı mesajı verir.
+
+Static code analyzer logic hataları gösterir.
+
+Compiler optimization da derleyici kodun anlamını bozmadan daha kısa sürede çalışacak şekilde ayarlar.
+
+**TANIMSIZ DAVRANIŞ**
+
+Tanımsız davranışlar tehlikeli durumlardır.
+```c
+#include <stdio.h>
+
+int main()
+{
+ x= f1() + f2()	;// tanimsiz durum hangi fonksiyonun once cagirilicagi belli degil
+}
+```
+Burada f1 veya f2 fonksiyonları sırası karışık olarak çağırılabilir.
+Hangisinin önce çağırılacağının bir garantisi yoktur. Bu belirsiz bir davranıştır.
+
+
+## DERS 3
+### SAYISAL SİSTEMLER
+ **2lik sayı sistemi**
+ ![image](https://user-images.githubusercontent.com/110337932/215271033-d9cdfdc5-a85a-4a20-ad84-dde13ee21425.png)
