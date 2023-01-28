@@ -132,7 +132,7 @@ Sayının 1 e tümleyeninin 1 fazlasıdır. Kısa yol olarak sağdan başlayarak
 
 Hepsi 1 ise -1 dir.
 
- ### 16lık sistemi.
+ #### 16lık sistemi.
  + Hex sistemi 16lık sistemdir.
  
  **SORULAR**
@@ -149,7 +149,7 @@ Hepsi 1 ise -1 dir.
  
  FFFF
  
- **TERİMLER**
+ #### TERİMLER
   
 + Token = atom
 + Tokenazing derleyicinin komutları anlarken kullandığı yöntemdir.kodu token lara ayırır.
@@ -162,4 +162,29 @@ Hepsi 1 ise -1 dir.
 + Operatörler
 + String literalleri
 + Ayraçlar
+
+##### Anahtar sözcük (keyword)
+ + İnt, if, for, do , float vb
+##### Sabitler
++ 41 decimal
++ 0x41 hex
++ 041 octal 8 lik sayı sistemi !!!!!!! **benzeri mükatta çıktı unutma**
++ C kurallarında olmayan bazı şeyler derleyicilerde farklılık gösterebilir.
+##### Operatörler
++ Operatör işlem yaptıran tokendir.
+##### String literalleri
++ Tek bir tokendir. “merhaba dünya”
+
+#### Object expression
+
+**Valve category**
+ + L valve
++ R valve
+
+##### Constant
++ C de bellekte bir yere sahip bazı nitelikleri olan varlıklara nesne nedir.
++ Nesnenin türü nesnelerin ne olduklarını ifade eder.
+
+**Veri bellekte kaç byte yer kaplar?**
+**1 ler ve 0 lar nasıl yorumlanacak?**
 
