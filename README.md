@@ -538,3 +538,65 @@ Cons değişkeninin değeri hiçbir zaman değiştirilemeyeceğini gösterir.
 + Optimizasyonun daha iyi olmasını sağlar.
 + Static ve const ön adları birlikte kullanılabilir.
 + Sabitler kodun bir parçasıdır ve bellekte yer kaplamazlar.
+
+## DERS 6
+
++ C büyük harf küçük harf duyarlı bir dildir.
++ Tamamen büyük harf ile isimlendirme yapmak iyi bişey değildir.
++ C de genelde makrolar büyük harflidir. Bu yüzden  koda bakan birisi kafası karışık yanlış  anlayabilir.
++ Global değişkenler dezavantajlıdır.
++ Programın taşınabilirliğini azaltır.
++ Hata bulmayı zorlaştırır.
++ Değişkenin scope nu mümkün olduğunca daraltılması gerekir.
++ 
+**Önemli**
+
++ Statik ömürlü değişken ile otomatik ömürlü değişkenin bulunduğu bellek farklıdır.
++ Otomatik ömürlü değişken ana bellek (stack) da tutulur.
++ Statik ömürlü değişken ana bellek (data segmenti) inde tutulur
+
+**Örnek**
+
+```c
+#include <stdio.h>
+
+/////////otomatik omurlu degisken oldugu icin her zaman 5 degerini verir.
+
+int main()
+{
+
+	for(int i=0;i<10;i++)
+	{
+		int x=5;
+		printf("%d\n");
+		++x;
+	}
+	
+}
+```
+Bu örnekte ekranda x değerini her zaman 5 olarak gösterir.
+
+Çünkü her seferinde döngüye tekrar giriyor ve x değeri bellekten siliniyor.
+
+### FONKSİYONLAR
+
+**Client code**
+
+**To define a function**
+
+**To call a function**
+
++ Client code bir fonsiyonu çalıştıracak verileri  gönderen kod
++ To define a funcion bir fonksiyonu tanımlamak
++ To call a function fonksiyonu çağırmak
+
+**Soru**
+
+**Fonksiyon kendini çağıran koda nasıl veri iletir?**
+1) Geri dönüş değeri (return value)
+2) Call by reference (değişken adresini gönder fonksiyon değişkenine hesapladığı değeri yazsın
+
++ Double get_area(double Radius) fonksiyon syntax ında içeride noktalı virgül olmaz.
+
+- [ ] void func(int x, y , z) syntax hatası
+- [x] Void func(int x . int y , int z) doğru syntax
