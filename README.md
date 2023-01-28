@@ -105,3 +105,20 @@ Hangisinin önce çağırılacağının bir garantisi yoktur. Bu belirsiz bir da
 - 2byte =65.535
 - 4 byte =4.294.967.295
 - 8 byte = 18.446.744.073.709.551.615
+
+**Bir sayının 1 e tümleyeni**
+
+Sayının bitlerini terleyerek yapılır
+
+11111111 → 00000000
+
+**Bir sayının 2 ye tümleyeni**
+
+Sayının 1 e tümleyeninin 1 fazlasıdır. Kısa yol olarak sağdan başlayarak ilk 1 bitini görene kadar aynısını yazarız.1 bitini göründe ilk bit aynen yazılır geri kalanı ters çevrilir.
+
+0111 0110 → 1000 1010
+
+**İşaretli 2lik sayı sistemi**
++ 8 bitlik sayının en son sol bitine işaret biti denir.
++ işaret biti 0 ise pozitif
++ 1 ise negatiftir.
