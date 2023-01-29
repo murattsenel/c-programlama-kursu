@@ -759,3 +759,109 @@ int max3(int a,int b,int c)
 	return max;
 }
 ```
+## DERS 7
+
+**Bir mutlak değer hesaplayan fonksiyon yazalım.**
+
+```c
+int get_abs(int x)
+{
+	if(x>0)
+	   return x;
+	else
+	   return -x;   
+
+}
+```
+Daha kısa bir yöntem ile yazalım.
+
+```c
+int get_abs(int x)
+{
+	return x >= 0 ? x : -x;
+
+}
+```
+Fonksiyonlar içinde fonksiyonlar tanımlanmaz.
+
+Fonksiyonlar global isim alanında tanımlanmalı.
+
+
+
+```c
+int main()
+{
+	int get_abs(int x)
+	{
+		return x >= 0 ? x : -x;
+
+	}
+
+	int x;
+	x=get_abs(-20);
+	printf("%d", x);
+	
+}
+```
+Main de bir fonksiyon olduğu için prgram syntax hatası verir.
+
+**Old-style function definition**
+
++ Dikkat kullanmayınız.
++ sadece eski fonksiyon tanımlamalarında vardır.
+
+```c
+double get_mean(a,b,c)
+double a,b,c
+{
+	return a+b+c ;
+}
+```
+Eski tip tanımlamadır. Yeni kurallar ile dilden çıkarılmıştır. Ancak derleyiciler eski kodların çalışmasını sağlamak için doğru kabul eder.
+
+**Soru**
+
+**Fonksiyonların geri dönüş değeri niçin vardır?**
+
+
+1) Bir değer hesaplamaya yönelik fonksiyonların hesaplanan değeri geri dönüş değeri olarak çağırılan koda aktarılır.
+2) Bir soruya cevap veren fonksiyonlar evet hayır , doğru yanlış , geçerli geçersiz gibi.
+   + predicate funciton
+   + test function
+   + bool function
+  
+    Geleneksel olarak int türü kullanılır.
+
+	İsimlendirmede is ön eki kullanılır.(isprime)
+
+	Bool için kullanılan int türüne boolin int denir.
+
+	0 = ise false 
+
+	0 hariç bütün değerler true' dur. non-zero
+
+
+3) Bazı fonksiyonların geri dönüş değeri başarı bilgisidir.
+   
+   Bazılarında başarı değeri int türünde gönderilir.
+
+   0 ise success non-zero ise failure
+
+   Microsoftta negetif değer başarısızlıktır.
+
+4) Fonksiyonun geri dönüş değeri tamamlayıcı bir bilgi olabilir.
+   
+   Kullanıp kullanmak kullanıcının elindedir.
+
+   Örnek **printf** fonksiyonu
+
+   Printf fonsiyonunun geri dönüş değeri ekrana yazdırdığı karakter sayısıdır.
+
+**Fonksiyonların geri dönüş değerlerini kullanmak zorunda değiliz ancak lojik hata olabilir.**
+
++ 1 , 2 ve 3. tip fonksiyonlarda geri dönüş değerini kullanmamak lojik hatadır.
++ 4 . tip fonksiyonların geri dönüş değerini kullanmamak lojik hata olmayabilir.
+
+### Fonksiyon çağrıları
+
+C ve c++ dillerinde fonksiyon çağrıları bir ifade ile olur ve bir opreratör geraklidir.
