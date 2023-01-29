@@ -865,3 +865,95 @@ Eski tip tanımlamadır. Yeni kurallar ile dilden çıkarılmıştır. Ancak der
 ### Fonksiyon çağrıları
 
 C ve c++ dillerinde fonksiyon çağrıları bir ifade ile olur ve bir opreratör geraklidir.
+
++ function call oparetor **()**
+
++ func();
++ Fonksiyonun içindeki parametre kadar arguman gönderilmesi gerekir.
+  
+**örnek**
+
+```c
+int a =234
+int b =321
+func(a*a + b*b ) ;
+```
+Fonksiyon çağrı ifadesinde gönderilen argumana matematiksel işlem yazılabilir.
+
+**örnek**
+
+```c
+if(ndigit(x)>5)
+{
+
+}
+```
+Void olmayan bir fonksiyonun çağrı ifadesinin değeri fonksiyonun geri dönüş değeri olarak kullanılabilir.
+
+- [x] .
+```c
+if(sin(x)<cos(y))
+```
+- [x] .
+```c
+int ival ndigit(x)+ndigit(y)
+```
+  - [x] .
+```c
+if(max2(x,y)>max2(a,b))
+```
+Yukarıdaki bütün fonksiyon çağrıları syntax kurallarına uygundur.
+
+**Dikkat**
+
+Void fonksiyonlar yalnızca deyim olarak kullanılır.
+
+```c
+void clear_screen(void)
+//
+clear_screen();
+```
+Fonksiyonun geri dönüş değerinini isteyerek kullanmamaya discard etmek denir.
+
++ scanf(); fonksiyonunun geri dönüş değerini kullanmamak lojik hatadır.
++ (void)getchar(); özellikle discard edilmiştir.
+
+### Fonksiyonların geri dönüş değerinin kullanılması
+
+1) Bir fonksiyonun çağrısından elde edilen geri dönüş değeri değişkene atanabilir veya değişkenin ilk değeri olabilir.
+   
+    ```c
+	int n= ndigit(x);
+	dval = sin(x);
+	```
+    
+**Soru**
+
+**Fonksiyonun geri dönüş değeri neden değişkende saklanır?**
+
++ Durumdan duruma değişir.
++ Geri dönüş değeri birden fazla yerde kullanılıyor olabilir.
+
+**Örnek**
+
+```c
+a = sqrt(x);
+b = sqrt(x);
+c = dval + sqrt(x);
+```
+Kötü kodlama örneğidir.Aynı işlemi birden fazla yerde yapmış.
+
+**Örnek**
+
+```c
+for(int i=0 ;i<strlen(str);++i)
+```
+Kötü kodlama örneğidir.
+
+Hem okuyanı yanıltır.Hemde döngüde fonksiyon bir çok kez tekrardan hesaplanacağı için performansı düşürür.
+
+Bazen fonksiyonun değerini bir değişkende tutmak sakıncalı olabilir.
+
+Karmaşık ve uzun bir kod varsa foksiyon kod içinde bir kere kullanılacaksa bile değişkende tutulabilir.Kodun okuması kolay olması amaçlanır.
+
+Farklı farklı durumlar olabilir.
