@@ -864,7 +864,7 @@ Eski tip tanımlamadır. Yeni kurallar ile dilden çıkarılmıştır. Ancak der
 
 ### Fonksiyon çağrıları
 
-C ve c++ dillerinde fonksiyon çağrıları bir ifade ile olur ve bir opreratör geraklidir.
++ C ve c++ dillerinde fonksiyon çağrıları bir ifade ile olur ve bir opreratör gereklidir.
 
 + function call oparetor **()**
 
@@ -957,3 +957,108 @@ Bazen fonksiyonun değerini bir değişkende tutmak sakıncalı olabilir.
 Karmaşık ve uzun bir kod varsa foksiyon kod içinde bir kere kullanılacaksa bile değişkende tutulabilir.Kodun okuması kolay olması amaçlanır.
 
 Farklı farklı durumlar olabilir.
+
+**Değişkende saklamanın iyi olmadığı durumlar**
+
+```c
+x = foo();
+
+y = func();
+
+z = x + y ;
+
+//yerine soyle yazılabilir
+
+z = foo(); + func();
+```
+**Önemli**
+
+Statik ömürlü değişkenlere sabit değer ile ilk değer verilmelidir.İlk değer olarak fonksiyonun değeri verilemez.Ancak otomatik ömürlü değişkenin ilk değeri fonksiyonun geri dönüş değeri olabilir.
+
+2) Fonksiyonun çağrı ifadesi bir fonksiyon arguman olarak kullanılabilir.
+
+**Örnek**
+
+```c
+a= func(foo());
+```
++ Arguman değeri önce hesaplanır.Sonra arguman olarak diğer fonksiuona gönderilir.
+
+```c
+sin(sqrt(x));
+
+max2(ndigit(x),ndigit(y));
+
+ndigit(ndigit(x));
+```
+**4 sayının en büyüğünü bulan fonksiyonu yazalım**
+
+```c
+#include <stdio.h>
+
+int max2(int x, int y)
+{
+	return x > y ? x : y;
+}
+
+
+
+int main()
+{
+	int x, y, z, t;
+	printf("4 adet sayi giriniz\n");
+
+	scanf("%d%d%d%d", &x, &y, &z, &t);
+
+	int max =max2(max2(x, y), max2(z, t));
+
+	printf("\n4 sayini en buyugu %d\n",max);
+	
+	
+}
+```
+3) İfadeli return deyiminin return değiminde fonksiyon çağrı ifadesi kullanılabilir.
+
+```c
+int foo(int a,int b,)
+////
+return max2(a,b)
+```
+**İki farklı fonksiyon çağrı yapısı vardır.**
+ + Call by value 
+ + Call by reference 
+  
+C de default olarak bütün fonksiyonlar çağrı ifadesi olarak call by value'dur.
+
+C de call by reference yapmanın yolu **pointer** kullanmaktır.
+
+**İki değişkenin değerlerini birbirleriyle takas eden fonksiyon yazalım.**
+
+```c
+#include <stdio.h>
+
+
+int main()
+{
+int x = 34;
+int y = 93;
+
+printf("x = %d   y = %d \n",x,y);
+
+int temp = x;
+
+x = y;
+
+y = temp ;
+
+printf("x = %d   y = %d ",x,y);	
+	
+}
+```
+Call by value fonksiyon ile takas işlemi yapılamaz.
+
+Örnek swap(x,y) bu fonksiyonda 2 değişkenin değeri değişemez. Çünkü fonksiyon içindeki değişkenler dışarıya etki etmezler.
+
+**Scanf();** adres operantörü ile çağırılır. Call by reference fonksiyondur.
+
+Yerel değişkenin değerini ancak **call by reference fonksiyon** değiştirebilir.
