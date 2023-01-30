@@ -1,4 +1,4 @@
-## ders 5
+## DERS 5
 
 **İnitialization is not a assignment**
 
