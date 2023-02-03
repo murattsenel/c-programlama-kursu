@@ -1,5 +1,7 @@
 ## C PROGRAMLAMA DERS NOTLARIM
 
++ [YANLIŞ YAPTIĞIM VEYA EMİN OLAMADIĞIM ÖRNEKLER](https://github.com/murattsenel/c-programlama-kursu/tree/main/Yanl%C4%B1%C5%9F%20veya%20emin%20olamad%C4%B1%C4%9F%C4%B1m%20sorular)
+
 + [DERS 1](https://github.com/murattsenel/c-programlama-kursu/blob/main/ders_1.md#ders-1)
 + [DERS 2](https://github.com/murattsenel/c-programlama-kursu/blob/main/ders_2.md#ders-2)
 + [DERS 3](https://github.com/murattsenel/c-programlama-kursu/blob/main/ders_3.md#ders-3)
