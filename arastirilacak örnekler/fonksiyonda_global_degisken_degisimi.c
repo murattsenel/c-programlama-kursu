@@ -1,8 +1,8 @@
 ﻿#define _CRT_SECURE_NO_WARNINGS
 
-// ben call by value da değişken değerlerini değiştiremeyiz sanıyordum.
+/* ben call by value da değişken değerlerini değiştiremeyiz sanıyordum.
 ancak arguman olarak gönderdiğimiz dışındaki global değişkenleri fonksiyonlar
- hem kullanıp hemde değiştirebiliyormuş.
+ hem kullanıp hemde değiştirebiliyormuş.*/
 
 #include <stdio.h>
 
