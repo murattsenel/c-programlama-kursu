@@ -11,3 +11,4 @@
 + **[Ders 5](https://github.com/murattsenel/c-programlama-kursu/blob/main/ders_5.md#ders-5)**
 + **[Ders 6](https://github.com/murattsenel/c-programlama-kursu/blob/main/ders_6.md#ders-6)**
 + **[Ders 7](https://github.com/murattsenel/c-programlama-kursu/blob/main/ders_7.md#ders-7)**
+  - [fonksiyonlar ödevi](https://github.com/murattsenel/c-programlama-kursu/tree/main/03_Fonksiyonlar)
