@@ -12,4 +12,4 @@
 + **[Ders 6](https://github.com/murattsenel/c-programlama-kursu/blob/main/ders_6.md#ders-6)**
 + **[Ders 7](https://github.com/murattsenel/c-programlama-kursu/blob/main/ders_7.md#ders-7)**
   - [Fonksiyonlar ödevi](https://github.com/murattsenel/c-programlama-kursu/tree/main/03_Fonksiyonlar)
-  - [Operatörler ödevi](https://github.com/murattsenel/c-programlama-kursu/tree/main/03_Fonksiyonlar)
+  - [Operatörler ödevi](https://github.com/murattsenel/c-programlama-kursu/tree/main/04_Operatorler)
