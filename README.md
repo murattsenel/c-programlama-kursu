@@ -14,4 +14,4 @@
   - [Fonksiyonlar ödevi](https://github.com/murattsenel/c-programlama-kursu/tree/main/03_Fonksiyonlar)
   - [Operatörler ödevi](https://github.com/murattsenel/c-programlama-kursu/tree/main/04_Operatorler)
 
-+ **[Düzenlenecek ders notları son 34 ders](https://github.com/murattsenel/c-programlama-kursu/tree/main/pdfler)**
++ **[Düzenlenecek ders notları son 49 ders](https://github.com/murattsenel/c-programlama-kursu/tree/main/pdfler)**
